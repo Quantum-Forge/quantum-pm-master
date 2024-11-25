@@ -16,8 +16,8 @@ class WeeklyReport extends BarChartWidget
 {
     protected int|string|array $columnSpan = [
         'sm' => 1,
-        'md' => 6,
-        'lg' => 3
+        'md' => 12,
+        'lg' => 12
     ];
 
     public function __construct($id = null)

@@ -16,7 +16,7 @@ class ActivitiesReport extends BarChartWidget
     protected int|string|array $columnSpan = [
         'sm' => 1,
         'md' => 6,
-        'lg' => 3
+        'lg' => 6
     ];
 
     public ?string $filter = '2023';

@@ -64,7 +64,7 @@ class MonthlyReport extends BarChartWidget
     protected int|string|array $columnSpan = [
         'sm' => 1,
         'md' => 6,
-        'lg' => 3
+        'lg' => 6
     ];
 
     protected function filter(User $user, array $params)
