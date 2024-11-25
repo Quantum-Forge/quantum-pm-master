@@ -36,20 +36,25 @@ class TimesheetExport extends Page implements HasForms
     protected function getFormSchema(): array
     {
         return [
-            Card::make()->schema([
-                Grid::make()
-                    ->columns(2)
-                    ->schema([
-                        DatePicker::make('start_date')
-                            ->required()
-                            ->reactive()
-                            ->label('Star date'),
-                        DatePicker::make('end_date')
-                            ->required()
-                            ->reactive()
-                            ->label('End date')
-                    ])
-            ])
+            Card::make()
+                ->schema([
+                    Grid::make()
+                        ->columns([
+                            'default' => 1,
+                            'md' => 2,
+                        ])
+                        ->schema([
+                            DatePicker::make('start_date')
+                                ->required()
+                                ->reactive()
+                                ->label('Star date'),
+                            DatePicker::make('end_date')
+                                ->required()
+                                ->reactive()
+                                ->label('End date')
+                        ])
+                ])
+                ->columns(1)
         ];
     }
 

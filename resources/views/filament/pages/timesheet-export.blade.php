@@ -1,10 +1,12 @@
 <x-filament::page>
-    <div class="w-full flex flex-col gap-10 justify-center items-center">
-        <form wire:submit.prevent="create"  class="lg:w-[50%] w-full">
+    <div class="w-full flex flex-col gap-6 justify-center items-center">
+        <form wire:submit.prevent="create" class="w-full max-w-2xl">
             {{ $this->form }}
-            <x-filament::button type="submit" form="create" >
-                {{ __('Create report') }}
-            </x-filament::button>
+            <div class="mt-4">
+                <x-filament::button type="submit" form="create" class="w-full">
+                    {{ __('Create report') }}
+                </x-filament::button>
+            </div>
         </form>
     </div>
 </x-filament::page>
